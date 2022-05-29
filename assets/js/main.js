@@ -333,3 +333,14 @@
 			});
 
 })(jQuery);
+
+function sendMail(form)
+{
+    // var yourMessage = document.getElementById("message").value;
+    var yourMessage = form.body.value;
+    var subject = form.subject.value;
+	var name = form.name.value;
+    document.location.href = "mailto:abhinavmaurya3@gmail.com?subject="
+        + encodeURIComponent(name + " - " +subject)
+        + "&body=" + encodeURIComponent(yourMessage);
+}
