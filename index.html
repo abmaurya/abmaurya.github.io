@@ -28,7 +28,7 @@
                     <h1>Hi, my name is Abhinav Maurya</h1>
                 </header>
                 <div class="content">
-                    <p>I program and make games.</p>
+                    <p>I program games.</p>
                     <ul class="actions">
                         <li><a href="#one" class="button next scrolly">Get Started</a></li>
                     </ul>
@@ -120,51 +120,26 @@
         <section id="contact">
             <div class="inner">
                 <section>
-                    <form method="post" action="#">
+                    <form method="post" onsubmit="return sendMail(this)" >
                         <div class="fields">
                             <div class="field half">
                                 <label for="name">Name</label>
-                                <input type="text" name="name" id="name" />
+                                <input type="text" name="name" id="name" placeholder="Tomie Starch"/>
                             </div>
                             <div class="field half">
-                                <label for="email">Email</label>
-                                <input type="text" name="email" id="email" />
+                                <label for="subject">Subject</label>
+                                <input type="text" name="subject" id="subject" placeholder="Work Opportunity" />
                             </div>
                             <div class="field">
-                                <label for="message">Message</label>
-                                <textarea name="message" id="message" rows="6"></textarea>
+                                <label for="body">Message</label>
+                                <textarea name="body" id="body" rows="6" placeholder="I have a brilliant work opportunity, let's catch up."></textarea>
                             </div>
                         </div>
                         <ul class="actions">
-                            <li><input type="submit" value="Send Message" class="primary" /></li>
+                            <li><input type="submit" class="icon solid alt fa-envelope" value="Send Mail" class="primary"/></li>
                             <li><input type="reset" value="Clear" /></li>
                         </ul>
                     </form>
-                </section>
-                <section class="split">
-                    <section>
-                        <div class="contact-method">
-                            <span class="icon solid alt fa-envelope"></span>
-                            <h3>Email</h3>
-                            <a href="mailto:abhinavmaurya3@gmail.com">abhinavmaurya3@gmail.com</a>
-                        </div>
-                    </section>
-                    <!-- <section>
-                        <div class="contact-method">
-                            <span class="icon solid alt fa-phone"></span>
-                            <h3>Phone</h3>
-                            <span>(000) 000-0000 x12387</span>
-                        </div>
-                    </section> -->
-                    <!-- <section>
-                        <div class="contact-method">
-                            <span class="icon solid alt fa-home"></span>
-                            <h3>Address</h3>
-                            <span>................<br />
-                                  ................<br />
-                                  ................</span>
-                        </div>
-                    </section> -->
                 </section>
             </div>
         </section>
@@ -173,16 +148,12 @@
         <footer id="footer">
             <div class="inner">
                 <ul class="icons">
-                    <!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li> -->
-                    <!-- <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li> -->
-                    <!-- <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li> -->
                     <li><a href="https://github.com/abmaurya/" class="icon brands alt fa-github"><span
                                 class="label">GitHub</span></a></li>
                     <li><a href="https://www.linkedin.com/in/--abhinav--maurya--/"
                             class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
                 </ul>
-                <ul class="copyright">
-                    <li>&copy; Untitled</li>
+                <ul class="bottom-line">
                     <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
                 </ul>
             </div>
